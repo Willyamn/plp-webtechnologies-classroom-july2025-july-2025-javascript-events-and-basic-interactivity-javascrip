@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JavaScript Interactivity Project</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>JavaScript Interactivity Demo</h1>
+
+  <!-- ======================= -->
+  <!-- Part 1: Event Handling  -->
+  <!-- ======================= -->
+  <section>
+    <h2>Part 1: Event Handling</h2>
+    <button id="clickBtn">Click Me</button>
+    <p id="clickMessage"></p>
+
+    <div id="hoverBox">Hover over me!</div>
+    <p id="hoverMessage"></p>
+
+    <input type="text" id="keyInput" placeholder="Type something">
+    <p id="keyMessage"></p>
+  </section>
+
+  <!-- =========================== -->
+  <!-- Part 2: Interactive Elements -->
+  <!-- =========================== -->
+  <section>
+    <h2>Part 2: Interactive Features</h2>
+
+    <!-- Light/Dark Mode -->
+    <button id="toggleMode">Toggle Light/Dark Mode</button>
+
+    <!-- FAQ Section -->
+    <div class="faq">
+      <h3 class="faq-question">What is JavaScript?</h3>
+      <p class="faq-answer">JavaScript is a programming language used to make web pages interactive.</p>
+
+      <h3 class="faq-question">What is DOM?</h3>
+      <p class="faq-answer">DOM stands for Document Object Model, which represents the structure of a web page.</p>
+    </div>
+
+    <!-- Counter Game -->
+    <div class="counter">
+      <h3>Counter Game</h3>
+      <button id="decrement">–</button>
+      <span id="counterValue">0</span>
+      <button id="increment">+</button>
+      <button id="reset">Reset</button>
+    </div>
+  </section>
+
+  <!-- ======================= -->
+  <!-- Part 3: Form Validation -->
+  <!-- ======================= -->
+  <section>
+    <h2>Part 3: Form Validation</h2>
+    <form id="signupForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" placeholder="Enter your name">
+      <p class="error" id="nameError"></p>
+
+      <label for="email">Email:</label>
+      <input type="text" id="email" placeholder="Enter your email">
+      <p class="error" id="emailError"></p>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" placeholder="Enter password">
+      <p class="error" id="passwordError"></p>
+
+      <button type="submit">Submit</button>
+      <p id="formMessage"></p>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
